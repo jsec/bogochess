@@ -1,4 +1,5 @@
-expect = require('chai').expect
+{ expect } = require('../test-setup')
+piece      = require('../../lib/pieces/piece')
 
 describe "piece base", ->
   it "passes", ->
