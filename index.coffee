@@ -8,4 +8,3 @@ board   = new Board(player1, player2)
 game    = new Game(board)
 
 console.log "game starting"
-game.start()

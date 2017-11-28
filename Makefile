@@ -1,10 +1,13 @@
+install:
+	@yarn install
+
 clean:
-	rm -rf ./node_modules
+	@rm -rf ./node_modules
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha
 
 run:
-	coffee index.coffee
+	@./node_modules/.bin/coffee index.coffee
 
-.PHONY: clean test
+.PHONY: run clean test
