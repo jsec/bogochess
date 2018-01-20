@@ -1,7 +1,7 @@
 { expect } = require('../test-setup')
 
 describe "Queen", ->
-  describe "moves", ->
+  describe "Moves", ->
     it "can move in any direction", ->
       expect(true).to.be.true
 
