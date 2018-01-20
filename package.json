@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha && istanbul report text-summary lcov"
+    "test": "mocha test/*.coffee test/**/*.coffee && istanbul report text-summary lcov"
   },
   "dependencies": {
     "bluebird": "3.5.1",
