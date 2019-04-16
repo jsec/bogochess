@@ -1,11 +1,11 @@
 install:
-	@yarn install
+	@npm install
 
 clean:
 	@rm -rf ./node_modules
 
 test:
-	@NODE_ENV=test ./node_modules/.bin/mocha "test/**/*.coffee"
+	@NODE_ENV=test nyc mocha
 
 run:
 	@./node_modules/.bin/coffee index.coffee
