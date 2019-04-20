@@ -29,7 +29,7 @@ jobs:
             - run: mkdir reports
             - run:
                 name: npm coverage
-                command: npm coverage
+                command: npm run coverage
             - run:
                 name: report coverage
                 command: './node_modules/.bin/nyc report --reporter=text-lcov'
