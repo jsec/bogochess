@@ -9,7 +9,7 @@
   },
   "nyc": {
     "extension": [".ts"],
-    "reporter": ["html"],
+    "reporter": ["text-summary", "html"],
     "all": true
   },
   "dependencies": {
