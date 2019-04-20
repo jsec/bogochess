@@ -25,7 +25,7 @@ jobs:
             - save-cache:
                 paths:
                     - ./node_modules
-                keys: v1-dependencies-{{ checksum "package.json" }}
+                key: v1-dependencies-{{ checksum "package.json" }}
             - run: mkdir reports
             - run:
                 name: npm test
