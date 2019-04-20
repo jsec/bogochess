@@ -19,25 +19,17 @@ jobs:
             - run:
                 name: Installing packages
                 command: npm install
-            - run:
-                name: Install mocha-junit-reporter
-                command: npm install mocha-junit-reporter
             - save-cache:
                 paths:
                     - ./node_modules
                 key: v1-dependencies-{{ checksum "package.json" }}
             - run: mkdir reports
             - run:
-                name: npm coverage
-                command: npm run coverage
+                name: npm test
+                command: npm test
             - run:
                 name: report coverage
-                command: './node_modules/.bin/nyc report --reporter=text-lcov'
-            - store_artifacts:
-                path: test-results.xml
-                prefix: tests
+                command: npm run coverage
             - store_artifacts:
                 path: coverage
                 prefix: coverage
-            - store_test_results:
-                path: test-results.xml
