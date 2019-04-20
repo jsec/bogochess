@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc mocha"
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/nyc ./node_modules/.bin/mocha"
   },
   "nyc": {
     "extension": [".ts"],
