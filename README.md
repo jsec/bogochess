@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/jsec/bogochess.svg?style=svg)](https://circleci.com/gh/jsec/bogochess)
+## Bogochess [![CircleCI](https://circleci.com/gh/jsec/bogochess.svg?style=svg)](https://circleci.com/gh/jsec/bogochess)
 
 A pet project that investigates what happens when, during the course of a chess game, players select moves at random.
 
