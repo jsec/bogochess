@@ -1,14 +1,14 @@
 import Color from '../enum/color';
 import PieceType from '../enum/piece-type';
-import Piece from '../interfaces/piece.interface';
+import Piece from './piece';
 
-class Bishop implements Piece {
-  protected type: PieceType;
-  protected color: Color;
-
+class Bishop extends Piece {
   constructor(color: Color) {
-    this.type = PieceType.Bishop;
-    this.color = color;
+    super(color, PieceType.Bishop);
+  }
+
+  getMoves(): void {
+    console.log('getMoves');
   }
 }
 

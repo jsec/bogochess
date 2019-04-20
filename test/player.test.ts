@@ -8,10 +8,6 @@ describe('Player', () => {
 
   beforeEach(() => {
     player = new Player(Color.Light);
-
-    this.getPieceCount = () => {
-      console.log('lol');
-    };
   });
 
   describe('Init', () => {

@@ -2,9 +2,9 @@ import Color from '../enum/color';
 import PieceType from '../enum/piece-type';
 import Piece from './piece';
 
-class Rook extends Piece {
+class Knight extends Piece {
   constructor(color: Color) {
-    super(color, PieceType.Rook);
+    super(color, PieceType.Knight);
   }
 
   getMoves(): void {
@@ -12,4 +12,4 @@ class Rook extends Piece {
   }
 }
 
-export default Rook;
+export default Knight;
