@@ -1,8 +1,9 @@
-## Bogochess [![Build Status](https://travis-ci.org/jsec/bogochess.svg?branch=master)](https://travis-ci.org/jsec/bogochess) [![Coverage Status](https://coveralls.io/repos/github/jsec/bogochess/badge.svg?branch=master)](https://coveralls.io/github/jsec/bogochess?branch=master)
+[![CircleCI](https://circleci.com/gh/jsec/bogochess.svg?style=svg)](https://circleci.com/gh/jsec/bogochess)
 
 A pet project that investigates what happens when, during the course of a chess game, players select moves at random.
 
 ### Stages
+
 - [ ] Implement move engine
 - [ ] Text-based game updates
 - [ ] Storing game statistics
@@ -10,4 +11,3 @@ A pet project that investigates what happens when, during the course of a chess 
 - [ ] Game UI
 - [ ] ???
 - [ ] PROFIT
-
