@@ -1,6 +1,6 @@
 import Color from '../enum/color';
 import PieceType from '../enum/piece-type';
-import Move from './move-interface';
+import Move from './move.interface';
 
 export default interface IPiece {
   color: Color;

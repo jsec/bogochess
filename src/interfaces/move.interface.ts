@@ -1,4 +1,4 @@
-export default interface Move {
+export default interface IMove {
   x: number;
   y: number;
 }
