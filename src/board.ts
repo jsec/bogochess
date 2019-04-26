@@ -1,3 +1,1 @@
-class Board {}
-
-export default Board;
+export default class Board {}

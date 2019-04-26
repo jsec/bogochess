@@ -1,19 +1,22 @@
 import Color from '../enum/color';
 import PieceType from '../enum/piece-type';
 import IPiece from '../interfaces/piece.interface';
-import IMove from '../interfaces/move.interface';
+import IPosition from '../interfaces/position.interface';
 
-abstract class Piece implements IPiece {
+export default abstract class Piece implements IPiece {
   public readonly type: PieceType;
   public readonly color: Color;
-  public abstract moveSet: IMove[];
+  public position: IPosition;
 
-  constructor(color: Color, type: PieceType) {
+  constructor(color: Color, position: IPosition, type: PieceType) {
     this.color = color;
     this.type = type;
+    this.position = position;
   }
 
   abstract getMoves(): void;
-}
 
-export default Piece;
+  move(position: IPosition): void {
+    this.position = position;
+  }
+}
