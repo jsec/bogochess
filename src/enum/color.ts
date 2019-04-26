@@ -1,4 +1,6 @@
-export default enum Color {
-    Light,
-    Dark
+enum Color {
+  Light,
+  Dark,
 }
+
+export default Color;
