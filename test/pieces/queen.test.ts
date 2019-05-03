@@ -1,9 +1,9 @@
-{ expect } = require('../test-setup')
+import {expect} from 'chai';
 
-describe "Queen", ->
-  describe "Moves", ->
-    it "can move in any direction", ->
-      expect(true).to.be.true
+describe('Queen', () => {
+  describe('Moves', () => {
+    it('can move in an direction', () => {});
 
-    it "can move any number of spaces", ->
-      expect(true).to.be.true
+    it('can move any number of spaces', () => {});
+  });
+});

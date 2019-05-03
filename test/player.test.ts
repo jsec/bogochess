@@ -1,44 +1,31 @@
 import {expect} from 'chai';
 import Player from '../src/player';
 import Color from '../src/enum/color';
+import IPiece from '../src/interfaces/piece.interface';
 import PieceType from '../src/enum/piece-type';
+import King from '../src/pieces/king';
+import Queen from '../src/pieces/queen';
+import Bishop from '../src/pieces/bishop';
+import Rook from '../src/pieces/rook';
+import Knight from '../src/pieces/knight';
 
 describe('Player', () => {
   let player: Player;
 
   beforeEach(() => {
-    player = new Player(Color.Light);
+    const pieces: IPiece[] = [
+      new King(Color.Light, {x: 1, y: 1}),
+      new Queen(Color.Light, {x: 1, y: 2}),
+      new Bishop(Color.Light, {x: 1, y: 3}),
+      new Rook(Color.Light, {x: 1, y: 4}),
+      new Knight(Color.Light, {x: 1, y: 5}),
+    ];
+    player = new Player(Color.Light, pieces);
   });
 
   describe('Init', () => {
-    it('initializes a player with one king', () => {
-      const kings = player.pieces.filter(p => p.type === PieceType.King);
-      expect(kings.length).to.equal(0);
-    });
-
-    it('initializes a player with one queen', () => {
-      const queens = player.pieces.filter(p => p.type === PieceType.Queen);
-      expect(queens.length).to.equal(0);
-    });
-
-    it('initializes a player with two bishops', () => {
-      const bishops = player.pieces.filter(p => p.type === PieceType.Bishop);
-      expect(bishops.length).to.equal(0);
-    });
-
-    it('initializes a player with two knights', () => {
-      const knights = player.pieces.filter(p => p.type === PieceType.Knight);
-      expect(knights.length).to.equal(0);
-    });
-
-    it('initializes a player with two rooks', () => {
-      const rooks = player.pieces.filter(p => p.type === PieceType.Rook);
-      expect(rooks.length).to.equal(0);
-    });
-
-    it('initializes a player with eight pawns', () => {
-      const pawns = player.pieces.filter(p => p.type === PieceType.Pawn);
-      expect(pawns.length).to.equal(0);
+    it('sets pieces on the player', () => {
+      expect(player.pieces.length).to.equal(5);
     });
   });
 });

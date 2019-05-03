@@ -1,12 +1,12 @@
 import Color from './enum/color';
-import Piece from './pieces/piece';
+import IPiece from './interfaces/piece.interface';
 
 export default class Player {
   protected color: Color;
-  public pieces: Piece[];
+  public pieces: IPiece[];
 
-  constructor(color: Color) {
+  constructor(color: Color, pieces: IPiece[]) {
     this.color = color;
-    this.pieces = [];
+    this.pieces = pieces;
   }
 }
