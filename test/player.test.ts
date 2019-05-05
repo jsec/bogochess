@@ -3,11 +3,7 @@ import Player from '../src/player';
 import Color from '../src/enum/color';
 import IPiece from '../src/interfaces/piece.interface';
 import PieceType from '../src/enum/piece-type';
-import King from '../src/pieces/king';
-import Queen from '../src/pieces/queen';
-import Bishop from '../src/pieces/bishop';
-import Rook from '../src/pieces/rook';
-import Knight from '../src/pieces/knight';
+import {King, Queen, Bishop, Rook, Knight} from '../src/pieces';
 
 describe('Player', () => {
   let player: Player;
