@@ -1,5 +1,5 @@
-import Color from './enum/color';
-import IPiece from './interfaces/piece.interface';
+import Color from "./enum/color";
+import IPiece from "./interfaces/piece.interface";
 
 export default class Player {
   protected color: Color;

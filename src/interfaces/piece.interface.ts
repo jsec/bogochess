@@ -4,6 +4,6 @@ import IPosition from './position.interface';
 
 export default interface IPiece {
   color: Color;
-  type: PieceType;
+  pieceType: PieceType;
   position: IPosition;
 }
