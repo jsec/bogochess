@@ -11,13 +11,13 @@ jobs:
         docker:
             - image: circleci/node:latest
         steps:
-            - checkout 
+            - checkout
             - run:
                 name: Update NPM
                 command: 'sudo npm install -g npm@latest'
             - run:
                 name: Installing jest
-                command: 'sudo npm intall -g jest'
+                command: 'sudo npm install -g jest'
             - run:
                 name: Installing packages
                 command: npm install
