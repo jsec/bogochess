@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import Player from "../src/player";
 import Color from "../src/enum/color";
 import IPiece from "../src/interfaces/piece.interface";
@@ -19,8 +18,8 @@ describe("Player", () => {
   });
 
   describe("Init", () => {
-    it("sets pieces on the player", () => {
-      expect(player.pieces.length).to.equal(5);
+    test("sets pieces on the player", () => {
+      expect(player.pieces.length).toEqual(5);
     });
   });
 });

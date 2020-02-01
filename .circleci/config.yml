@@ -1,5 +1,8 @@
 version: 2
 
+orbs:
+  codecov: codecov/codecov@1.0.2
+
 jobs:
     build:
         working_directory: ~/app
@@ -13,19 +16,13 @@ jobs:
                 name: Update NPM
                 command: 'sudo npm install -g npm@latest'
             - run:
+                name: Installing jest
+                command: 'sudo npm intall -g jest'
+            - run:
                 name: Installing packages
                 command: npm install
             - run:
-                name: Install mocha-junit-reporter
-                command: npm install mocha-junit-reporter
-            - run: mkdir reports
-            - run:
-                name: npm test
-                command: ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive --timeout=10000 --exit --reporter mocha-junit-reporter --reporter-options mochaFile=reports/mocha/test-results.xml
-            - run:
                 name: report coverage
                 command: npm run coverage
-            - store_test_results:
-                path: reports
-            - store_artifacts:
-                path: ./reports/mocha/test-results.xml
+            - codecov/upload:
+                file: './coverage/coverage-final.json'
