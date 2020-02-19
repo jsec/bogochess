@@ -1,7 +1,7 @@
-import Color from "../enum/color";
-import PieceType from "../enum/piece-type";
-import IPiece from "../interfaces/piece.interface";
-import IPosition from "../interfaces/position.interface";
+import Color from '../enum/color';
+import PieceType from '../enum/piece-type';
+import IPiece from '../interfaces/piece.interface';
+import IPosition from '../interfaces/position.interface';
 
 export default abstract class Piece implements IPiece {
   public readonly pieceType: PieceType;

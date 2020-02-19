@@ -1,10 +1,10 @@
 enum PieceType {
-    King,
-    Queen,
-    Bishop,
-    Knight,
-    Rook,
-    Pawn
+  King,
+  Queen,
+  Bishop,
+  Knight,
+  Rook,
+  Pawn
 }
 
-export default PieceType
+export default PieceType;

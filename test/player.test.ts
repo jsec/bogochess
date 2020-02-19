@@ -1,9 +1,9 @@
-import Player from "../src/player";
-import Color from "../src/enum/color";
-import IPiece from "../src/interfaces/piece.interface";
-import { King, Queen, Bishop, Rook, Knight } from "../src/pieces";
+import Player from '../src/player';
+import Color from '../src/enum/color';
+import IPiece from '../src/interfaces/piece.interface';
+import { King, Queen, Bishop, Rook, Knight } from '../src/pieces';
 
-describe("Player", () => {
+describe('Player', () => {
   let player: Player;
 
   beforeEach(() => {
@@ -17,8 +17,8 @@ describe("Player", () => {
     player = new Player(Color.Light, pieces);
   });
 
-  describe("Init", () => {
-    test("sets pieces on the player", () => {
+  describe('Init', () => {
+    test('sets pieces on the player', () => {
       expect(player.pieces.length).toEqual(5);
     });
   });
