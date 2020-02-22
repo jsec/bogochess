@@ -1,9 +1,9 @@
-import Piece from './piece';
-import King from './king';
-import Queen from './queen';
 import Bishop from './bishop';
+import King from './king';
 import Knight from './knight';
-import Rook from './rook';
 import Pawn from './pawn';
+import Piece from './piece';
+import Queen from './queen';
+import Rook from './rook';
 
 export { Piece, King, Queen, Bishop, Knight, Rook, Pawn };

@@ -1,7 +1,8 @@
-import Player from '../src/player';
+import { Bishop, King, Knight, Queen, Rook } from '../src/pieces';
+
 import Color from '../src/enum/color';
 import IPiece from '../src/interfaces/piece.interface';
-import { King, Queen, Bishop, Rook, Knight } from '../src/pieces';
+import Player from '../src/player';
 
 describe('Player', () => {
   let player: Player;
@@ -14,6 +15,7 @@ describe('Player', () => {
       new Rook(Color.Light, { x: 1, y: 4 }),
       new Knight(Color.Light, { x: 1, y: 5 })
     ];
+
     player = new Player(Color.Light, pieces);
   });
 
