@@ -18,7 +18,7 @@
     "eslint": "6.8.0",
     "import-sort-style-eslint": "6.0.0",
     "jest": "25.1.0",
-    "prettier": "1.19.1",
+    "prettier": "2.0.3",
     "prettier-plugin-import-sort": "0.0.3",
     "source-map-support": "0.5.16",
     "ts-jest": "25.3.1",
