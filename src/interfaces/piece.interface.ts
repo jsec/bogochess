@@ -1,6 +1,6 @@
 import Color from '../enum/color';
-import IPosition from './position.interface';
 import PieceType from '../enum/piece-type';
+import IPosition from './position.interface';
 
 export default interface IPiece {
   color: Color;

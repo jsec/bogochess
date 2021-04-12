@@ -6,4 +6,6 @@ import Piece from './piece';
 import Queen from './queen';
 import Rook from './rook';
 
-export { Piece, King, Queen, Bishop, Knight, Rook, Pawn };
+export {
+ Bishop, King, Knight, Pawn,Piece, Queen, Rook
+};
